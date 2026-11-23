@@ -22,9 +22,17 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
 .wrap{max-width:860px;margin:0 auto;padding:0 16px}
 header{border-bottom:1px solid var(--line)}
-header .wrap{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;padding-top:18px;padding-bottom:18px}
+header .wrap{padding-top:14px;padding-bottom:14px}
+.top{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:baseline;justify-content:space-between}
 .brand{font-weight:700;font-size:19px;text-decoration:none;color:var(--fg);white-space:nowrap}
 .brand span{color:var(--acc)}
+.contacts{display:flex;flex-wrap:wrap;gap:2px 18px;align-items:baseline;font-size:15px;color:var(--dim)}
+.contacts a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
+.contacts a:hover{color:var(--acc);border-color:var(--acc)}
+.contacts .tel{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.contacts .when{white-space:nowrap}
+header nav{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+@media (max-width:620px){.contacts{font-size:14px;gap:2px 14px}}
 nav{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:15px}
 nav a{color:var(--dim);text-decoration:none}
 nav a:hover,nav a[aria-current]{color:var(--acc)}
@@ -67,7 +75,14 @@ footer a{color:var(--acc)}
 </head>
 <body>
 <header><div class="wrap">
+<div class="top">
 <a class="brand" href="/hodovaya-tochka/">Ходовая <span>точка</span></a>
+<div class="contacts">
+<span><a href="https://2gis.kg/bishkek/geo/70000001111802924">улица Элдияра Керимова, 59а</a>, Бишкек</span>
+<span class="when">Ежедневно 09:00–18:00</span>
+<a class="tel" href="tel:+996708008100">+996 708 008 100</a>
+</div>
+</div>
 <nav><a href="/hodovaya-tochka/">Главная</a><a href="/hodovaya-tochka/vibrostend/" aria-current="page">Вибростенд</a><a href="/hodovaya-tochka/protochka-diskov/">Проточка дисков</a><a href="/hodovaya-tochka/hodovaya/">Ходовая</a><a href="/hodovaya-tochka/rulevaya-reyka/">Рулевые рейки</a><a href="/hodovaya-tochka/shagovye-amortizatory/">Шаровые и амортизаторы</a><a href="/hodovaya-tochka/ceny/">Цены</a></nav>
 </div></header>
 <main class="wrap">
@@ -77,8 +92,10 @@ footer a{color:var(--acc)}
 </main>
 <footer><div class="wrap">
 <p>СТО «Ходовая точка» — ремонт ходовой, тормозов и рулевого в Бишкеке.<br>
-Бишкек, улица Элдияра Керимова, 59а · ежедневно 09:00–18:00 ·
-<a href="https://2gis.kg/bishkek/geo/70000001111802924">карта</a> · <a href="https://wa.me/996708008100">WhatsApp</a></p>
+Бишкек, улица Элдияра Керимова, 59а, заезд со стороны БЧК · ежедневно 09:00–18:00<br>
+<a href="tel:+996708008100">+996 708 008 100</a> ·
+<a href="tel:+996558008100">+996 558 008 100</a> ·
+<a href="https://2gis.kg/bishkek/geo/70000001111802924">карта 2ГИС</a> · <a href="https://wa.me/996708008100">WhatsApp</a></p>
 </div></footer>
 </body>
 </html>
